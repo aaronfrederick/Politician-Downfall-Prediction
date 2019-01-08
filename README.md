@@ -12,23 +12,23 @@ The premise of this passion project is to predict the downfall of US polititians
 3. Training a Reinforcement Learning-Style classifier to stay up-to-date with American political goings-on
 
 ***Tasks:***
-    - find source of list of current American politicians or timeline that can be scraped
-        -White House staffers can be found in govtlist.txt
-        -Senators and Members of the House will have to be scraped cleverly, address later 
-    - Article Scraping:
-        - Use NYT article search API
-        - https://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json
-        - For the future collection of multi-sourced data, use NEWSAPI
-        - https://newsapi.org/
-        -Logic is to be as follows: for politician in current_pols_list, make a daily API call, collect articles for analysis
-    - Make a document classifier that determines right/left leaning sentiments
-    - Use that classifier to assert which news sources lean which ways with a threshold
-    - Train a classifier that reads documents about politicians and determines the probability of removed from the timeline
+- find source of list of current American politicians or timeline that can be scraped
+- White House staffers can be found in govtlist.txt
+- Senators and Members of the House will have to be scraped cleverly, address later 
+- Article Scraping:
+- Use NYT article search API
+- https://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json
+- For the future collection of multi-sourced data, use NEWSAPI
+- https://newsapi.org/
+- Logic is to be as follows: for politician in current_pols_list, make a daily API call, collect articles for analysis
+- Make a document classifier that determines right/left leaning sentiments
+- Use that classifier to assert which news sources lean which ways with a threshold
+- Train a classifier that reads documents about politicians and determines the probability of removed from the timeline
     
 
     
 ***Data Storage:***
-    - MongoDB
-        ~ Collections of news articles (NYTAPI)
-        ~ Collection Wikipedia pages on politicians  (WIKIPEDIA)
-        ~ Table of writers, their news organization, their political sentiment, an 'impact' factor in politician removal 
+- MongoDB
+    ~ Collections of news articles (NYTAPI)
+    ~ Collection Wikipedia pages on politicians  (WIKIPEDIA)
+    ~ Table of writers, their news organization, their political sentiment, an 'impact' factor in politician removal 
